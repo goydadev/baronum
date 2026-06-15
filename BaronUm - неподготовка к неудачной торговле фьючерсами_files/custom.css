@@ -1,0 +1,106 @@
+.grad_name {
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #B5B5FF, #4F4789);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+#rec798186328 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec798186190 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec798185455 .tn-elem[data-elem-id="1725317107470"] .tn-atom, #rec798185455 .tn-elem[data-elem-id="1725317107470"] .tn-atom, #rec798179632 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec798179514 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec798171360 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec798170951 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec797998954 .tn-elem[data-elem-id="1725392736851"] .tn-atom, #rec797998959 .tn-elem[data-elem-id="1725410313292"] .tn-atom, #rec797998958 .tn-elem[data-elem-id="1725409951693"] .tn-atom, #rec797998957 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec797998955 .tn-elem[data-elem-id="1725407959055"] .tn-atom, #rec797998954 .tn-elem[data-elem-id="1725392785193"] .tn-atom, #rec797998953 .tn-elem[data-elem-id="1725391116880"] .tn-atom, #rec796047789 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec796025123 .tn-elem[data-elem-id="1725391116880"] .tn-atom, #rec796047858 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec796025123 .tn-elem[data-elem-id="1725391116880"] .tn-atom, #rec796025123 .tn-elem[data-elem-id="1725391116880"] .tn-atom, #rec796047881 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec795303458 .tn-elem[data-elem-id="1725392736851"] .tn-atom, #rec795287759 .tn-elem[data-elem-id="1725410313292"] .tn-atom, #rec795287757 .tn-elem[data-elem-id="1725409951693"] .tn-atom, #rec795287754 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec795287747 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec795287745 .tn-elem[data-elem-id="1725407959055"] .tn-atom, #rec795287743 .tn-elem[data-elem-id="1725406462094"] .tn-atom, #rec795287738 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec795303513 .tn-elem[data-elem-id="1725392736851"] .tn-atom, #rec795287731 .tn-elem[data-elem-id="1725317107470"] .tn-atom, #rec795274529 .tn-elem[data-elem-id="1725410313292"] .tn-atom, #rec795274527 .tn-elem[data-elem-id="1725409951693"] .tn-atom, #rec795274524 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec795274500 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec795274498 .tn-elem[data-elem-id="1725407959055"] .tn-atom, #rec795274496 .tn-elem[data-elem-id="1725406462094"] .tn-atom, #rec795274483 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec795303458 .tn-elem[data-elem-id="1725392785193"] .tn-atom, #rec795274476 .tn-elem[data-elem-id="1725317107470"] .tn-atom, #rec795281562 .tn-elem[data-elem-id="1725410313292"] .tn-atom, #rec795281560 .tn-elem[data-elem-id="1725409951693"] .tn-atom, #rec795281557 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec795281548 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec795281546 .tn-elem[data-elem-id="1725407959055"] .tn-atom, #rec795281546 .tn-elem[data-elem-id="1725407959055"] .tn-atom, #rec795281544 .tn-elem[data-elem-id="1725406829056"] .tn-atom, #rec795281544 .tn-elem[data-elem-id="1725406462094"] .tn-atom, #rec795281539 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec795303500 .tn-elem[data-elem-id="1725392736851"] .tn-atom, #rec795281532 .tn-elem[data-elem-id="1725317107470"] .tn-atom, #rec793681738 .tn-elem[data-elem-id="1725410313292"] .tn-atom, #rec793681379 .tn-elem[data-elem-id="1725409951693"] .tn-atom, #rec793680344 .tn-elem[data-elem-id="1725408740940"] .tn-atom, #rec794155916 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec793679050 .tn-elem[data-elem-id="1725407959055"] .tn-atom, #rec793189176 .tn-elem[data-elem-id="1725317107470"] .tn-atom, #rec793631568 .tn-elem[data-elem-id="1725391116880"] .tn-atom, #rec793639676 .tn-elem[data-elem-id="1725392736851"] .tn-atom, #rec793673838 .tn-elem[data-elem-id="1725403448219"] .tn-atom, #rec793678027 .tn-elem[data-elem-id="1725406462094"] .tn-atom {
+    display: inline;
+}
+
+/* BaronUm parody pass: keep the first viewport readable inside Tilda's fixed boxes. */
+#rec1221856791 .grad_name,
+#rec1221856791 .tn-elem[data-elem-id="1725317107470"],
+#rec1221856791 .tn-elem[data-elem-id="1755186973600"] {
+    display: none !important;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1725317020415"] .tn-atom {
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    white-space: normal !important;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1725317020415"] .tn-atom::after {
+    content: "Готовим к сливу\A фьючерсов";
+    color: #000 !important;
+    display: block;
+    white-space: pre-line;
+    font-size: 46px !important;
+    line-height: 1.12 !important;
+    font-weight: 700;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1725317140465"] .tn-atom {
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    white-space: normal !important;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1725317140465"] .tn-atom::after {
+    content: "Неподготовка\A к фьючерсам";
+    color: #fff !important;
+    display: block;
+    white-space: pre-line;
+    font-size: 28px !important;
+    line-height: 1.18 !important;
+    font-weight: 800;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1755183178898"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183352376"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183448793"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183737039"] .tn-atom {
+    font-size: 30px !important;
+    line-height: 1 !important;
+    white-space: normal !important;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1755183178898"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183352376"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183737039"] .tn-atom {
+    color: transparent !important;
+    font-size: 0 !important;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1755183178898"] .tn-atom::after,
+#rec1221856791 .tn-elem[data-elem-id="1755183352376"] .tn-atom::after,
+#rec1221856791 .tn-elem[data-elem-id="1755183737039"] .tn-atom::after {
+    color: #ffac45 !important;
+    display: block;
+    font-size: 30px !important;
+    line-height: 1 !important;
+    font-weight: 800;
+}
+
+#rec1221856791 .tn-elem[data-elem-id="1755183178898"] .tn-atom::after { content: "5+ лет"; }
+#rec1221856791 .tn-elem[data-elem-id="1755183352376"] .tn-atom::after { content: "20+"; }
+#rec1221856791 .tn-elem[data-elem-id="1755183737039"] .tn-atom::after { content: "мини"; }
+
+#rec1221856791 .tn-elem[data-elem-id="1755183247508"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183405761"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183768775"] .tn-atom,
+#rec1221856791 .tn-elem[data-elem-id="1755183464683"] .tn-atom {
+    font-size: 15px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+}
+
+#rec795295743 .tn-elem[data-elem-type="text"] .tn-atom {
+    line-height: 1.15 !important;
+    white-space: normal !important;
+}
+
+#rec795295743 .tn-elem[data-elem-id="1725316164150"] .tn-atom {
+    font-size: 10px !important;
+}
+
+@media (max-width: 1199px) {
+    #rec1221856791 .tn-elem[data-elem-id="1725317020415"] .tn-atom {
+        font-size: 34px !important;
+    }
+}

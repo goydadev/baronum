@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="32" viewBox="0 0 154 32" fill="none">
+  <rect x="0" y="0" width="154" height="32" rx="10" fill="#F3EEFF"/>
+  <path d="M18 7l9 5.2v7.6L18 25l-9-5.2v-7.6L18 7z" fill="#4F4789"/>
+  <path d="M18 11.5l5.1 3v3L18 20.5l-5.1-3v-3L18 11.5z" fill="#FFAC45"/>
+  <text x="36" y="22" fill="#222E58" font-family="Manrope, Arial, sans-serif" font-size="19" font-weight="900">BaronUm</text>
+</svg>
