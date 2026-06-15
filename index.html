@@ -95,10 +95,7 @@
 
     .brand {
       display: inline-grid;
-      grid-template-columns: 48px minmax(0, 1fr);
-      grid-template-areas:
-        "mark name"
-        "mark tag";
+
       align-items: center;
       column-gap: 10px;
       width: 100%;
@@ -112,7 +109,6 @@
 
     .brand img {
       grid-area: mark;
-      width: 48px;
       height: 48px;
       object-fit: contain;
       filter: drop-shadow(0 8px 12px rgba(34, 46, 88, .18));
@@ -163,7 +159,7 @@
 
     .actions {
       display: grid;
-      grid-template-columns: repeat(3, 46px) 150px 152px;
+      grid-template-columns: 150px 152px;
       align-items: center;
       gap: 8px;
       justify-content: stretch;
@@ -1012,9 +1008,7 @@
     <header class="topbar">
       <nav class="wrap nav" aria-label="Главная навигация">
         <a class="brand" href="#" aria-label="БаронУм">
-          <img src="static/path48.svg" alt="">
-          <span class="brand-name">БаронУм</span>
-          <span class="brand-tagline">твой путь в дурку мечты</span>
+          <img src="static/logo.png" alt="">
         </a>
         <div class="links">
           <a href="#directions">Направления слива</a>
@@ -1024,9 +1018,7 @@
           <a href="#reviews">Истории с палаты</a>
         </div>
         <div class="actions">
-          <a class="social tg" href="#contacts" aria-label="Telegram">TG</a>
-          <a class="social yt" href="#contacts" aria-label="YouTube">YT</a>
-          <a class="social ps" href="#contacts" aria-label="Palata Station">P6</a>
+
           <a class="call" href="#contacts">+7 495 MARGIN-CALL</a>
           <a class="btn" href="#pricing">Разбор убытков</a>
         </div>
@@ -1056,9 +1048,9 @@
             <div class="purple-card">
               <h2>Комплексная неподготовка от выпускников в биржу</h2>
               <div class="logos">
-                <div class="logo-tile yellow">Ликей<br>НИУ<br>ВШЭ</div>
-                <div class="logo-tile">BaronUm</div>
-                <div class="logo-tile">P6</div>
+                <div class="logo-tile yellow">ЦКПБ</div>
+                <div class="logo-tile">ByBit<br>Futures</div>
+                <div class="logo-tile">Тинькофф<br>Инвестиции</div>
               </div>
             </div>
             <a class="hero-button" href="#pricing">Подбор плеча</a>
@@ -1369,7 +1361,7 @@
             <h2>Оставь заявку, пока рынок еще не оставил тебя</h2>
             <p>Менеджер BaronUm подберет антикурс, плечо, формат палаты и безопасную фразу для разговора с близкими после ночной сессии.</p>
             <div class="hero-cta">
-              <a class="btn" href="mailto:margin-call@baronum.local">Записаться на разбор</a>
+              <a class="btn" href="https://t.me/GTfast_live">Записаться на разбор</a>
               <a class="btn secondary" href="#directions">Посмотреть антикурсы</a>
             </div>
           </div>
