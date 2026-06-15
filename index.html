@@ -32,7 +32,41 @@
 
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
-    .page { overflow: hidden; }
+    .page {
+      position: relative;
+      z-index: 0;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .page::before,
+    .page::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: .78;
+    }
+
+    .page::before {
+      width: 842px;
+      height: 559px;
+      top: 82px;
+      right: -210px;
+      background-image: url("BaronUm - неподготовка к неудачной торговле фьючерсами_files/Ellipse_2.png");
+    }
+
+    .page::after {
+      width: 1200px;
+      height: 358px;
+      top: 820px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("BaronUm - неподготовка к неудачной торговле фьючерсами_files/Ellipse_4.png");
+      opacity: .58;
+    }
     .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
 
     .topbar {
@@ -52,7 +86,7 @@
       gap: 14px;
       min-height: 64px;
       padding: 8px;
-      border-radius: 8px;
+      border-radius: 18px;
       background: rgba(255,255,255,.88);
       box-shadow: 0 12px 34px rgba(79, 71, 137, .12);
     }
@@ -63,7 +97,7 @@
       justify-content: center;
       min-height: 48px;
       padding: 0 24px;
-      border-radius: 8px;
+      border-radius: 14px;
       background: var(--lavender);
       color: #222e58;
       font-size: 28px;
@@ -85,7 +119,7 @@
       align-items: center;
       min-height: 40px;
       padding: 0 12px;
-      border-radius: 8px;
+      border-radius: 14px;
       background: #f5f1ff;
       font-size: 14px;
       font-weight: 800;
@@ -104,7 +138,7 @@
       height: 42px;
       display: grid;
       place-items: center;
-      border-radius: 8px;
+      border-radius: 14px;
       color: white;
       font-weight: 900;
     }
@@ -120,7 +154,7 @@
       min-height: 50px;
       padding: 0 22px;
       border: 0;
-      border-radius: 8px;
+      border-radius: 18px;
       background: var(--orange);
       color: white;
       font: 900 16px/1.1 Inter, Manrope, Arial, sans-serif;
@@ -135,7 +169,21 @@
     }
 
     .hero {
+      position: relative;
+      isolation: isolate;
       padding: 34px 0 48px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 604px;
+      height: 423px;
+      left: -180px;
+      bottom: -160px;
+      z-index: -1;
+      opacity: .5;
+      background: url("BaronUm - неподготовка к неудачной торговле фьючерсами_files/Ellipse_3.png") center / contain no-repeat;
     }
 
     .hero-grid {
@@ -146,7 +194,7 @@
     }
 
     .hero-copy, .hero-side, .section-panel {
-      border-radius: var(--radius);
+      border-radius: 20px;
       background: rgba(255,255,255,.92);
       box-shadow: var(--shadow);
     }
@@ -158,12 +206,41 @@
       overflow: hidden;
     }
 
+    .hero-copy::before,
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .hero-copy::before {
+      width: 187px;
+      height: 154px;
+      right: 28px;
+      top: 28px;
+      background-image: url("BaronUm - неподготовка к неудачной торговле фьючерсами_files/Ellipse_5.png");
+      opacity: .55;
+    }
+
+    .hero-copy::after {
+      width: 64px;
+      height: 64px;
+      right: 54px;
+      top: 92px;
+      background:
+        linear-gradient(90deg, transparent 43%, var(--orange) 43% 57%, transparent 57%),
+        linear-gradient(0deg, transparent 43%, var(--orange) 43% 57%, transparent 57%);
+      clip-path: polygon(50% 0, 61% 38%, 100% 50%, 61% 62%, 50% 100%, 39% 62%, 0 50%, 39% 38%);
+    }
+
     .ribbon {
       display: inline-flex;
       align-items: center;
       min-height: 52px;
       padding: 0 20px;
-      border-radius: 8px;
+      border-radius: 18px;
       background: var(--purple);
       color: white;
       font-size: 34px;
@@ -206,7 +283,7 @@
     .stat {
       min-height: 128px;
       padding: 22px 18px;
-      border-radius: 8px;
+      border-radius: 18px;
       background: var(--lavender);
     }
 
@@ -239,9 +316,10 @@
       overflow: hidden;
       min-height: 390px;
       padding: 44px;
-      border-radius: var(--radius);
+      border-radius: 20px;
       color: white;
       background:
+        url("BaronUm - неподготовка к неудачной торговле фьючерсами_files/Ellipse_2.png") right -230px top -170px / 520px auto no-repeat,
         linear-gradient(135deg, #514889 0%, #8f8bef 100%);
       box-shadow: var(--shadow);
     }
@@ -265,7 +343,7 @@
       display: grid;
       place-items: center;
       padding: 16px;
-      border-radius: 8px;
+      border-radius: 18px;
       background: white;
       color: #222e58;
       font-weight: 950;
@@ -294,7 +372,7 @@
     }
 
     .terminal {
-      border-radius: 8px;
+      border-radius: 18px;
       background: #15152a;
       color: #f7f3ff;
       padding: 18px;
@@ -321,7 +399,7 @@
       align-items: center;
       min-height: 34px;
       padding: 0 12px;
-      border-radius: 8px;
+      border-radius: 18px;
       background: var(--lavender);
       color: var(--purple);
       font-weight: 900;
@@ -403,6 +481,151 @@
       grid-template-columns: .9fr 1.1fr;
       gap: 24px;
       align-items: stretch;
+    }
+
+    .message-cloud {
+      position: relative;
+      min-height: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      background:
+        url("BaronUm - неподготовка к неудачной торговле фьючерсами_files/Ellipse_765.png") right -110px bottom -90px / 360px auto no-repeat,
+        #f3eeff;
+      box-shadow: var(--shadow);
+    }
+
+    .msg {
+      position: absolute;
+      max-width: 310px;
+      padding: 18px 22px;
+      border-radius: 18px;
+      background: #fff;
+      color: #15142d;
+      font-size: 20px;
+      line-height: 1.18;
+      font-weight: 900;
+      box-shadow: 0 18px 40px rgba(79, 71, 137, .14);
+    }
+
+    .msg small {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--orange);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .msg:nth-child(1) { left: 32px; top: 36px; transform: rotate(-3deg); }
+    .msg:nth-child(2) { right: 34px; top: 92px; transform: rotate(2deg); }
+    .msg:nth-child(3) { left: 78px; bottom: 58px; transform: rotate(2deg); }
+    .msg:nth-child(4) { right: 72px; bottom: 34px; transform: rotate(-3deg); }
+
+    .marquee {
+      margin: 0 0 54px;
+      overflow: hidden;
+      border-top: 1px solid rgba(79,71,137,.14);
+      border-bottom: 1px solid rgba(79,71,137,.14);
+      background: #fff;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: runline 26s linear infinite;
+    }
+
+    .marquee-track span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 74px;
+      padding: 0 34px;
+      color: var(--purple);
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .marquee-track span::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-left: 34px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    @keyframes runline {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .format-board {
+      display: grid;
+      grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 28px;
+    }
+
+    .format-copy {
+      min-height: 430px;
+      padding: 36px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      display: grid;
+      align-content: space-between;
+      gap: 24px;
+    }
+
+    .format-copy h3 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .format-copy p {
+      margin: 0;
+      color: #4f4b68;
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .format-options {
+      display: grid;
+      gap: 14px;
+    }
+
+    .format-option {
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 16px;
+      border-radius: 18px;
+      background: #f3eeff;
+    }
+
+    .format-option b {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--orange);
+      color: white;
+      font-size: 18px;
+    }
+
+    .format-option span {
+      color: #201c45;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 900;
     }
 
     .chart {
@@ -498,6 +721,10 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 16px;
+    }
+
+    .format-board + .courses {
+      margin-top: 22px;
     }
 
     .course {
@@ -676,16 +903,18 @@
     }
 
     @media (max-width: 980px) {
-      .nav, .hero-grid, .process, .final-panel { grid-template-columns: 1fr; }
+      .nav, .hero-grid, .process, .format-board, .final-panel { grid-template-columns: 1fr; }
       .actions { justify-content: flex-start; }
       .cards, .pricing { grid-template-columns: 1fr 1fr; }
       .courses, .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hero-copy { min-height: auto; }
       .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .message-cloud { min-height: 380px; }
+      .msg { max-width: 280px; font-size: 18px; }
       .hero-copy { padding: 48px; }
       .purple-card, .final-panel { padding: 38px; }
       h1 { font-size: 68px; }
-      h2, .purple-card h2 { font-size: 44px; }
+      h2, .purple-card h2, .format-copy h3 { font-size: 44px; }
       .ribbon { font-size: 28px; }
       .hero-copy p { font-size: 21px; }
       .stat b { font-size: 42px; }
@@ -703,7 +932,7 @@
       .hero-copy, .purple-card, .section-panel { padding: 24px; }
       .ribbon { transform: rotate(-7deg) translate(-8px, 0); }
       h1 { font-size: 48px; }
-      h2, .purple-card h2 { font-size: 34px; }
+      h2, .purple-card h2, .format-copy h3 { font-size: 34px; }
       .ribbon { font-size: 22px; }
       .hero-copy p, .section-title p, .final-panel p { font-size: 17px; }
       .stat b { font-size: 36px; }
@@ -711,6 +940,20 @@
       .stats, .cards, .courses, .reviews, .pricing, .faq { grid-template-columns: 1fr; }
       .logos { grid-template-columns: 1fr; }
       .step { grid-template-columns: 1fr; }
+      .message-cloud {
+        min-height: auto;
+        padding: 16px;
+        display: grid;
+        gap: 12px;
+      }
+      .msg {
+        position: static;
+        max-width: none;
+        transform: none !important;
+      }
+      .format-copy { min-height: auto; padding: 24px; }
+      .format-option { grid-template-columns: 1fr; }
+      .marquee-track span { min-height: 58px; font-size: 20px; padding: 0 22px; }
       .mascot { width: 160px; }
     }
   </style>
@@ -776,6 +1019,23 @@
         </div>
       </section>
 
+      <div class="marquee" aria-label="Бегущая строка BaronUm">
+        <div class="marquee-track">
+          <span>маржин-колл без паники</span>
+          <span>стоп-лосс до сделки</span>
+          <span>палата N6 онлайн</span>
+          <span>плечо x100 под присмотром</span>
+          <span>разбор убытков</span>
+          <span>тильт-менеджмент</span>
+          <span>маржин-колл без паники</span>
+          <span>стоп-лосс до сделки</span>
+          <span>палата N6 онлайн</span>
+          <span>плечо x100 под присмотром</span>
+          <span>разбор убытков</span>
+          <span>тильт-менеджмент</span>
+        </div>
+      </div>
+
       <section id="directions">
         <div class="wrap">
           <div class="section-title">
@@ -811,16 +1071,11 @@
               <h2>Методика, проверенная ночной сессией</h2>
               <p>Мы полностью изучили процесс слива, чтобы ты узнал его по первым симптомам: внезапная уверенность, отсутствие стопа, фраза “ну теперь точно отрастет”.</p>
             </div>
-            <div class="chart">
-              <div class="bars" aria-label="График исчезновения депозита">
-                <div class="bar" style="height: 92%" data-label="эйфория"></div>
-                <div class="bar" style="height: 76%" data-label="плечо"></div>
-                <div class="bar" style="height: 58%" data-label="усредн."></div>
-                <div class="bar" style="height: 38%" data-label="молитва"></div>
-                <div class="bar" style="height: 21%" data-label="колл"></div>
-                <div class="bar" style="height: 7%" data-label="тишина"></div>
-              </div>
-              <div class="chart-note">Кривая обучения BaronUm: чем меньше депозит, тем больше понимания.</div>
+            <div class="message-cloud" aria-label="Сообщения BaronUm на фоне шумных световых пятен">
+              <div class="msg"><small>Диагностика</small>“Где стоп?” - “В душе”. Записываем в группу мягкого плеча.</div>
+              <div class="msg"><small>Симптом</small>Если рука тянется усредняться, санитар рынка уже надевает перчатки.</div>
+              <div class="msg"><small>Практика</small>Пробный маржин-колл: красные свечи, холодные ладони, внезапная мудрость.</div>
+              <div class="msg"><small>Выписка</small>Открыл терминал, ничего не нажал. Почти просветление.</div>
             </div>
           </div>
           <div class="timeline">
@@ -889,6 +1144,33 @@
             <span class="eyebrow">Антикурсы</span>
             <h2>Выбирай неудобный формат паники</h2>
             <p>Онлайн-сеансы, домашние сделки, пробные ликвидации и записи ночных разборов в одном месте для максимально некомфортного обучения.</p>
+          </div>
+          <div class="format-board">
+            <div class="format-copy">
+              <div>
+                <span class="eyebrow">Формат</span>
+                <h3>Не учим тебя на удобной платформе. У нас все как на рынке: красиво, тревожно, с последствиями.</h3>
+              </div>
+              <p>Вся неподготовка в одном месте: календарь ночных созвонов, пробники ликвидаций, чат с санитаром рынка и записи разборов, которые лучше смотреть с водой.</p>
+            </div>
+            <div class="format-options">
+              <div class="format-option">
+                <b>01</b>
+                <span>Онлайн-сеансы в мини-палатах: куратор видит твой график и выражение лица одновременно.</span>
+              </div>
+              <div class="format-option">
+                <b>02</b>
+                <span>Домашние сделки: тренируем желание “отбиться” на демо, пока депозит еще не начал писать завещание.</span>
+              </div>
+              <div class="format-option">
+                <b>03</b>
+                <span>Пробные маржин-коллы: таймер, шум стакана, комиссия и мягкая пауза перед фразой “а стоп где?”.</span>
+              </div>
+              <div class="format-option">
+                <b>04</b>
+                <span>Чат с санитаром рынка: отвечаем на “лонг?” словом “дыши” быстрее, чем биржа снимает маржу.</span>
+              </div>
+            </div>
           </div>
           <div class="courses">
             <article class="course">
